@@ -1,6 +1,6 @@
 # -IEEE-TIM-2021-1-Shallow-CNN-for-HAR
 [IEEE TIM 2021-1] Shallow Convolutional Neural Networks for Human Activity Recognition using Wearable Sensors
-![Model](https://github.com/wenbohuang1002/-IEEE-JBHI-2021-Channel-Selectivity-CNN-for-HAR/blob/main/Images/Model.png)
+![Model](https://github.com/wenbohuang1002/-IEEE-TIM-2021-1-Shallow-CNN-for-HAR/blob/main/Images/Arch.png)
 All of datasets we use in this paper can be download from Internet and you can find we how to process data in this paper.  
 This is my first time to open source, so there maybe some problems in my codes and I will improve this project in the near feature.  
 Thanks!
@@ -13,66 +13,50 @@ Thanks!
 ### UCI-HAR dataset
 Get UCI dataset from UCI Machine Learning Repository(http://archive.ics.uci.edu/ml/index.php), do data pre-processing by sliding window strategy and split the data into training and test sets
 ```
-# Baseline for UCI-HAR
+# Baseline (3-layer CNN) for UCI-HAR
 $ python Net_UCI_B.py
-# Baseline + Channel-selectivity for UCI-HAR
-$ python Net_UCI_SC.py
-# ResNet for UCI-HAR
-$ python Net_UCI_ReB.py
-# ResNet + Channel-selectivity for UCI-HAR
-$ python Net_UCI_ReSC.py
+# 6-layer CNN for UCI-HAR
+$ python Net_UCI_B1.py
+# C3 for UCI-HAR
+$ python Net_UCI_C3.py
 ```
 ### OPPORTUNITY dataset
 ```
-# Baseline for OPPORTUNITY
+# Baseline (3-layer CNN) for OPPORTUNITY
 $ python Net_Opportunity_B.py
-# Baseline + Channel-selectivity for OPPORTUNITY
-$ python Net_Opportunity_SC.py
-# ResNet for OPPORTUNITY
-$ python Net_Opportunity_ReB.py
-# ResNet + Channel-selectivity for OPPORTUNITY
-$ python Net_Opportunity_ReSC.py
+# 6-layer CNN for OPPORTUNITY
+$ python Net_Opportunity_B1.py
+# C3 for OPPORTUNITY
+$ python Net_Opportunity_C3.py
 ```
 ### PAMAP2 dataset
 ```
-# Baseline for PAMAP2
+# Baseline (3-layer CNN) for PAMAP2
 $ python Net_pamap2_B.py
-# Baseline + Channel-selectivity for PAMAP2
-$ python Net_pamap2_SC.py
-# ResNet for PAMAP2
-$ python Net_pamap2_ReB.py
-# ResNet + Channel-selectivity for PAMAP2
-$ python Net_pamap2_ReSC.py
+# 6-layer CNN for PAMAP2
+$ python Net_pamap2_B1.py
+# C3 for PAMAP2
+$ python Net_pamap2_C3.py
 ```
 ### UniMiB-SHAR dataset
 ```
-# Baseline for UniMiB-SHAR
+# Baseline (3-layer CNN) for UniMiB-SHAR
 $ python Net_unimib_B.py
-# Baseline + Channel-selectivity for UniMiB-SHAR
-$ python Net_unimib_SC.py
-# ResNet for UniMiB-SHAR
-$ python Net_unimib_ReB.py
-# ResNet + Channel-selectivity for UniMiB-SHAR
-$ python Net_unimib_ReSC.py
+# 6-layer CNN for UniMiB-SHAR
+$ python Net_unimib_B1.py
+# C3 for UniMiB-SHAR
+$ python Net_unimib_C3.py
 ```
-### WISDM dataset
-```
-# Baseline for WISDM
-$ python Net_wisdm_B.py
-# Baseline + Channel-selectivity for WISDM
-$ python Net_wisdm_SC.py
-# ResNet for WISDM
-$ python Net_wisdm_ReB.py
-# ResNet + Channel-selectivity for WISDM
-$ python Net_wisdm_ReSC.py
-```
+
 ## Citation
-If you find Channel-Selectivity CNN for HAR useful in your research, please consider citing.
+If you find Shallow CNN for HAR useful in your research, please consider citing.
 ```
-@article{huang2021convolutional,
-  title={The convolutional neural networks training with Channel-Selectivity for human activity recognition based on sensors},
-  author={Huang, Wenbo and Zhang, Lei and Teng, Qi and Song, Chaoda and He, Jun},
-  journal={IEEE Journal of Biomedical and Health Informatics},
+@article{huang2021shallow,
+  title={Shallow Convolutional Neural Networks for Human Activity Recognition Using Wearable Sensors},
+  author={Huang, Wenbo and Zhang, Lei and Gao, Wenbin and Min, Fuhong and He, Jun},
+  journal={IEEE Transactions on Instrumentation and Measurement},
+  volume={70},
+  pages={1--11},
   year={2021},
   publisher={IEEE}
 }
